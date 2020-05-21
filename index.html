@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>测试工具方法</title>
+	<script type="text/javascript" src="./util.js"></script>
+	<script type="text/javascript" src="./util01.js"></script>
+	<script type="text/javascript" src="./util02.js"></script>
+</head>
+<body>
+	测试
+
+	<script>
+		var a = [1,2,3,4,5,6,7];
+		var b = [1,5,7,8,9,0]
+		// util.js调用方法, 原型链调用
+		var util = new Tengyu();
+		console.log(util.arrFalse(a, b), '=======util======');
+		console.log(util.arrTrue(a, b), '=======util======');
+
+		// util1.js调用方法, 挂载到window上
+		console.log(tengyu.arrFalse(a, b), '=======util======');
+		console.log(tengyu.arrTrue(a, b), '=======util======');
+
+		// util2.js调用方法, 挂载到this上
+		console.log(arrFalse(a, b), '=======util======');
+		console.log(arrTrue(a, b), '=======util======');
+
+	</script>
+</body>
+</html>
