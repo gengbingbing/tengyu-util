@@ -19,6 +19,10 @@
 		console.log(util.arrFalse(a, b), '=======util======');
 		console.log(util.arrTrue(a, b), '=======util======');
 
+		util.setCookie('test001', '123456');
+
+		console.log(util.cookie.getCookie('test001'), 666666666666666666666666666666);
+
 		// util1.js调用方法, 挂载到window上
 		console.log(tengyu.arrFalse(a, b), '=======util======');
 		console.log(tengyu.arrTrue(a, b), '=======util======');
